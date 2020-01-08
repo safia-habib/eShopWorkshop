@@ -1,7 +1,7 @@
 # eShop Workshop
 ## Summary
 This workshop is built with the intention of demonstrating the use of Dynatrace during a migration of a .NET monolith application into a .NET microservice application.  
-The exercises in this workshop are making use of the existing Microsoft demo application named eShop packaged in a monolith (eShopOnWeb) and containerized microservice architecture (eShopOnContainers).  In addition the workshop is run within Azure.  
+The exercises in this workshop are making use of the existing Microsoft demo application named eShop packaged in a monolith [eShopOnWeb](https://github.com/peterhack/eShopOnWeb/) and containerized microservice architecture [eShopOnContainers](https://github.com/peterhack/eShopOnContainers/).  In addition the workshop is run within Azure.  
 ## Pre-Requisites
 - Azure account with ability to create and manage virtual machines (VMs) as well as a 3-node Azure Kubernetes Cluster (AKS)
 - Ability to run Azure Resource Manager (ARM) templates from within the Azure CLI
