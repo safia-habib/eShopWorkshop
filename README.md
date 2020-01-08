@@ -10,8 +10,8 @@ The exercises in this workshop are making use of the existing Microsoft demo app
 ### Azure
 log into Azure Portal 
 - https://portal.azure.com
-- open Azure CLI [show icon]
-  - [run a command to validate]
+- open Azure Bash CLI [show icon]
+  - run command: /> git clone https://github.com/peterhack/eShopOnWeb.git
 ### Dynatrace
 Create a Dynatrace trial tenant (if don't already have one)
 - https://dynatrace.com/trial
@@ -25,18 +25,28 @@ Using the ARM template to deploy eShopOnWeb Monolithic .NET application with Dyn
 - this template will request a password for the eshopadmin user and the MSSQL DB admin
   - the DB Admin user will require 8 alpha chars, 1+ number, 1+ special chars.
 - this ARM template will request your Dynatrace tenant URL, API token, & PaaS token
+- in Bash CLI:
+  - cd eShopOnWeb
+  - az group deployment create --name "eshopvm" --resource-group "eshopworkshop" --template-file "./src/VM/azuredeploy.json"
 
-1. SSH to VM using eshopadmin@<vm ip>
+This takes ~10 mins to complete
+
+1. SSH to VM using eshopadmin@[vm-ip-address]
+tail /var/log/cloud-init-output.log 
+- last line should be
+"Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~18.04.1 finished..."
 
 ### Reviewing eShopOnWeb App
 1. docker ps -- confirm eShopOnWeb is running
-1. open browser and navigate to https://<vm ip>:5106
+1. open browser and navigate to https://[vm-ip-address]:5106
 
 ### Reviewing eShopOnWeb App in Dynatrace
 navigate around Dynatrace to review app
 
 ### Add front-end to eShopOnWeb App
 add nginx front end
+- go to /home/eshopadmin/eShopOnWeb/src/VM/
+- execute ./start-frontend.sh
 
 ### Review eShopOnWeb App in Dynatrace to see RUM
 
