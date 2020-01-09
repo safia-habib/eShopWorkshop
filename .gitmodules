@@ -1,0 +1,6 @@
+[submodule "eShopOnWeb"]
+	path = eShopOnWeb
+	url = https://github.com/peterhack/eShopOnWeb
+[submodule "eShopOnContainers"]
+	path = eShopOnContainers
+	url = https://github.com/peterhack/eShopOnContainers
