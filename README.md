@@ -21,6 +21,12 @@ Create a Dynatrace trial tenant (if don't already have one)
   > [get API token]
   >
   > [get PaaS token]
+
+- configure Dynatrace Tenant to instrument containers:
+  - containerd
+  - cri-o
+  - docker
+
 ## Step 1 - The Monolith
 ### deploying a VM
 Using the ARM template to deploy eShopOnWeb Monolithic .NET application with Dynatrace Extension applied
