@@ -60,6 +60,8 @@ add nginx front end
   >
   >  ./start-frontend.sh
 
+review eShop at http://[vm-ip-address]
+
 ### Review eShopOnWeb App in Dynatrace to see RUM
 [add content exercises here]
 
