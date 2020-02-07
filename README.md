@@ -17,11 +17,11 @@ Log into Azure Portal
   > run command: /> git clone https://github.com/safia-habib/eShopWorkshop.git
 ### Dynatrace
 - Log into Dynatrace tenant. Get the tokens for authentication and authorization -> Copy the values in a notepad
-  > [collect tenant URL/ID] : https://TenantUUID.live.dynatrace.co -> Copy the value of TenantUUID
+  > [Copy tenant ID] : https://TenantUUID.live.dynatrace.co -> Copy the value of TenantUUID
   >
-  > [get API token] : Settings-> Integration -> Dynatrace API -> Generate a new Token, Copy the token value
+  > [Copy API token] : Settings-> Integration -> Dynatrace API -> Generate a new Token, Copy the token value
   >
-  > [get PaaS token] : Settings -> Integration -> Platform as a Service -> Generate a new Token, Copy the token value
+  > [Copy PaaS token] : Settings -> Integration -> Platform as a Service -> Generate a new Token, Copy the token value
 
 - Configure Dynatrace Tenant to instrument containers: Settings -> Processes and containers -> Container monitoring -> Turn on the following sliders
   - containerd
